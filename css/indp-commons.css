@@ -1,0 +1,41 @@
+@font-face {
+    font-family: indp-light;
+    src: url('../font/light.woff') format('woff');
+}
+
+@font-face {
+    font-family: indp-normal;
+    src: url('../font/normal.woff') format('woff');
+}
+
+@font-face {
+    font-family: indp-bold;
+    src: url('../font/bold.woff') format('woff');
+}
+
+html {
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    -webkit-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
+    font-family: indp-light, sans-serif !important;
+    color: #444;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.center-bg-image {
+	background-position: 50% 50%;
+}
+
+img {
+	margin: auto;
+    display: block;
+}
