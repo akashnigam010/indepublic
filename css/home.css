@@ -10,10 +10,14 @@
 	padding-bottom: 5%;
 }
 
-.main h1 {
+.main #mtitle {
 	color : #fff;
-	font-family : indp-bold;
+	font-family : indp-light;
 	font-size : 3em;
+}
+
+.tempFontSize { 
+	font-size: 1.7em !important;
 }
 
 .main .logo-main {
@@ -39,6 +43,15 @@
     font-size: 1.2em;
 }
 
+.menu-language li > a {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.menu-language li > a:hover {
+    color: #000;
+}
+
 .menu-main .navbar-nav > li > a {
     color: #000;
 }
@@ -47,7 +60,6 @@
 	font-size: 3em;
 	text-align: center;
 	padding: 10%;
-	/*font-family: indp-bold;*/
 }
 
 @media (max-width: 990px) {
@@ -58,7 +70,7 @@
 }
 
 @media (max-width: 768px) {
-	.main h1 {
+	.main #mtitle {
 		font-size : 1.5em;
 	}
 

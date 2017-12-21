@@ -17,6 +17,12 @@
     <div>        
         <div class="container-fluid row center-bg-image main">
             <div class="row">
+                <ul class="menu-language nav navbar-nav">
+                    <li><a href="#" onclick="toEnglish()"><span>English</span></a></li>
+                    <li><a href="#" onclick="toHindi()"><span>हिंदी</span></a></li>
+                </ul>
+            </div>
+            <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <div>
@@ -28,10 +34,10 @@
             <div class="row header-main">
                 <div>
                     <div class="textContainer H1" style="cursor: text;">
-                        <h1><div style="text-align: center;">INDEPUBLIC</div></h1>
+                        <p><div id="mtitle" style="text-align: center;">INDEPUBLIC</div></p>
                     </div>
                     <div class="textContainer H2" style="cursor: text; padding-bottom: 10%;">
-                        <h2><div style="text-align: center;">people . power . progress</div></h2>
+                        <h2><div id="mSubtitle" style="text-align: center;">people . power . progress</div></h2>
                     </div>                        
                 </div>
             </div>
@@ -51,7 +57,7 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <div class="section1">
+                <div class="section1" id="mSection1">
                     Where people and the leaders come together
                 </div>
             </div>
@@ -59,7 +65,6 @@
 
     </div>
     <script src="js/main.js"></script>
-    <script src="js/simbla.js"></script>
 </body>
 
 </html>
