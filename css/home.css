@@ -60,6 +60,45 @@
 	font-size: 3em;
 	text-align: center;
 	padding: 10%;
+	font-family: indp-normal;
+}
+
+.section2 {
+	font-size: 1.8em;
+	text-align: center;
+	padding: 10%;
+	color: #fff;
+	background-color: #000;
+}
+
+.elem {
+	padding: 10%;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.dark {
+	background-color: #000; 
+	color: #fff;"
+}
+
+.feature-heading {
+	font-size: 2.5em;
+}
+
+.feature-text {
+	font-size: 1.5em;
+	padding-top: 2%;
 }
 
 @media (max-width: 990px) {
@@ -85,6 +124,20 @@
 	}
 
 	.section1 {
+		font-size: 3em;
+		padding: 20% 10%;
+	}
+
+	.section2 {
+		font-size: 1.3em;
+	}
+
+	.feature-heading {
 		font-size: 2em;
+	}
+
+	.feature-text {
+		font-size: 1.2em;
+		padding-top: 5%;
 	}
 }
