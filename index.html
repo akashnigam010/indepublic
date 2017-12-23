@@ -4,7 +4,12 @@
     <title>Indepublic</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content ="black" />
+    <meta name="theme-color" content="#000" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    
     <link href="css/bootstrap3.min.css" rel="stylesheet">
     <link href="css/indp-commons.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
@@ -15,7 +20,7 @@
 
 <body>
     <div>        
-        <div class="container-fluid col-xs-12 center-bg-image main">
+        <div class="center-bg-image main">
             <div class="col-xs-12">
                 <ul class="menu-language nav navbar-nav">
                     <li><a href="#" onclick="toEnglish()"><span>English</span></a></li>
@@ -23,38 +28,40 @@
                 </ul>
             </div>
             <div class="col-xs-12">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div>
-                        <img class="logo-main" draggable="false" alt="logo.png" src="img/1984-1utqdu8.png">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div>
+                            <img class="logo-main" draggable="false" alt="logo.png" src="img/logo.png">
+                        </div>
                     </div>
+                    <div class="col-md-4"></div>
                 </div>
-                <div class="col-md-4"></div>
             </div>
-            <div class="col-xs-12 header-main">
-                <div>
-                    <div class="textContainer H1" style="cursor: text;">
-                        <p><div id="mtitle" style="text-align: center;">INDEPUBLIC</div></p>
+            <div class="header-main col-xs-12 center">
+                <div class="row">
+                    <div>
+                        <p>
+                            <div class="title" id="mtitle">INDEPUBLIC</div>
+                        </p>
                     </div>
-                    <div class="textContainer H2" style="cursor: text; padding-bottom: 10%;">
-                        <h2><div id="mSubtitle" style="text-align: center;">people . power . progress</div></h2>
+                    <div style="padding-bottom: 10%;">
+                        <h2>
+                            <div class="subtitle" id="mSubtitle">people . power . progress</div>
+                        </h2>
                     </div>                        
                 </div>
             </div>
         </div>
         <div class="menu-main col-xs-12">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav menu-nav">
                 <li><a href="#"><span>Home</span></a></li>
                 <li><a href="#"><span>About</span></a></li>
                 <li><a href="#"><span>News</span></a></li>
                 <li><a href="#"><span>Blog</span></a></li>
             </ul>
         </div>
-        <!-- <div class="col-xs-12">
-            <div class="col-xs-10 col-xs-offset-1">
-                <hr style="margin-top: 0px;"></hr>
-            </div>
-        </div> -->
+
         <div class="col-xs-12">
             <div class="col-xs-12">
                 <div class="section1" id="mSection1">
@@ -115,6 +122,30 @@
             </div>
         </div>
 
+        <div class="col-xs-12 elem center">
+            <div class="col-xs-12">
+                <div class="feature-heading" id="mFeature-heading2">
+                    <hr style="border-top-color : #8e8b8b;">
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="feature-text" id="mFeature-text2">
+                    Subscribe for the latest updates
+                </div>
+            </div>
+            <div class="col-xs-12" style="padding-top: 5%;">
+                <div>
+                    <p class="subscriptionError" class="hide"></p>
+                </div>
+                <div class="emailDiv" style="display: inline-block;">
+                    <input type="email" spellcheck="false" class="email" id="subscribeMail" placeholder="Enter your email" />
+                </div>
+                <div style="display: inline-block;">
+                    <button class="indp-button" onclick="subscribe()">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+
         <div class="col-xs-12 elem dark center footer">
             <div class="col-xs-12">
                 <div class="feature-heading" id="mFeature-heading1">
@@ -135,7 +166,7 @@
                 </div>
             </div>
             <div class="col-xs-12" align="center" style="padding-top: 5%;">
-                <span class="footer-links-desc"><a href="about.html">About</a></span>
+                <span class="footer-links-desc"><a href="about">About</a></span>
                 <span class="footer-links-desc">|</span>
                 <span class="footer-links-desc"><a href="contact.html">Contact</a></span>
                 <span class="footer-links-desc">|</span>
@@ -146,7 +177,8 @@
         </div>
 
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>

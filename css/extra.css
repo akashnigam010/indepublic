@@ -5,6 +5,13 @@
 	border-radius: 0px;
 }
 
+.logo-mini {
+	position: absolute;
+	width: 50px;
+	padding-top : 20px;
+	padding-left: 10px;
+}
+
 .main .header-main {
 	padding-top: 5%; 
 	padding-bottom: 5%;
@@ -13,7 +20,7 @@
 .main .title {
 	color : #fff;
 	font-family : indp-light;
-	font-size : 7em;
+	font-size : 3em;
 }
 
 .main .subtitle {
