@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>About | Indepublic</title>
+    <title>Contact | Indepublic</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -35,62 +35,57 @@
                 <div class="row">
                     <div>
                         <p>
-                            <div class="title" id="mtitle">ABOUT</div>
+                            <div class="title" id="mtitle">CONTACT</div>
                         </p>
                     </div>                       
                 </div>
             </div>
         </div>
 
-        <div class="col-xs-12 elem left" style="padding-top: 10%;">
-            <div class="col-xs-12">
-                <div class="feature-heading" id="heading1">
-                    INFORMATION
-                </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="feature-text" id="mFeature-text1">
-                    <p id="info1">Indepublic is the answer to your curiosity about all political and social happenings around you.</p>
-                    <br>
-                    <p id="info2">It helps in discovering the vision, political career, work, agenda and public life of the political leaders, workers and other members of your society, circle, city or state.</p>
-                    <br>
-                    <p id="info3">Follow the public life of your representatives and keep yourself updated with the public works being undertaken or new issues being raised around you.</p>
-                </div>
-            </div>
+        <div class="center">
+          <label id="mCallus" class="callUsLabel">Call us at 9999200758</label>
+          <br>
+          <label id="mSubmitQuery">Or submit your query below</label>
+        </div>
+          
         </div>
 
-        <div class="col-xs-12 elem left">
-            <div class="col-xs-12">
-                <div class="feature-heading" id="heading2">
-                    CONNECT
-                </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="feature-text" id="mFeature-text1">
-                    <p id="connect1">Indepublic is designed to connect more people and bring about a positive change.</p>
-                    <br>
-                    <p id="connect2">It brings you closer to those who can help in resolving a problem in your society or a public concern around you.</p>
-                    <br>
-                    <p id="connect3">Raise an issue on Indepublic and get help from circle representatives, leaders, public workers and other members of your society or circle.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xs-12 elem left" style="padding-bottom: 10%;">
-            <div class="col-xs-12">
-                <div class="feature-heading" id="heading3">
-                    LEADERSHIP
-                </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="feature-text" id="mFeature-text1">
-                    <p id="lead1">Indepublic provides you the platform to lead.</p>
-                    <br>
-                    <p id="lead2">Showcase your public work, political aspirations and vision and let more people reach you.</p>
-                    <br>
-                    <p id="lead3">Take up the charge, help in resolving the issues posted by people in your area, team up with others and work towards a better future.</p>
-                </div>
-            </div>
+        <div class="row col-xs-12 elem center">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <form>
+                    <div class="group">
+                      <input type="text" id="name" required="required" autocomplete="off" spellcheck="false" placeholder="Name" />
+                    </div>
+                    <div class="error-label error-label-name font-0-8 red align-left hide">
+                        Please enter your name
+                    </div>
+                    <div class="group">
+                      <input type="number" id="phone" required="required" autocomplete="off" spellcheck="false" placeholder="Phone" />
+                    </div>
+                    <div class="group">
+                      <input type="text" id="email" required="required" autocomplete="off" spellcheck="false" placeholder="Email" />
+                    </div>
+                    <div class="error-label error-label-email font-0-8 red align-left hide">
+                        Please check your email
+                    </div>
+                    <div class="group">
+                      <textarea id="message" required="required" autocomplete="off" spellcheck="false" placeholder="Your message" ></textarea>
+                    </div>
+                    <div class="error-label error-label-message font-0-8 red align-left hide">
+                        Please enter your message
+                    </div>
+                    <div class="group">
+                        <button id="mSendMessage" class="indp-button" type="button" style="width: 50%;" onclick="submitMessage();">Send Message</button>
+                        <img id="loader" class="hide" src="img/loader.svg" style="width: 50px;" />
+                    </div>
+                    <div class="error-label success-label-message font-1-3 hide green">
+                        Thank you for your message. We will get back to you shortly!
+                    </div> 
+                    <div class="error-label error-label-message-main font-1-3 hide red">
+                        Something went wrong. Please refresh the page and try again.
+                    </div>                       
+                  </form>
+            </div>                
         </div>
 
         <div class="col-xs-12 dark center footer">
@@ -125,7 +120,7 @@
 
     </div>
     <script src="js/common.js"></script>
-    <script src="js/about.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>

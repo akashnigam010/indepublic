@@ -35,6 +35,10 @@ body {
 	background-position: 50% 50%;
 }
 
+label {
+    font-weight: 100;
+}
+
 img {
 	margin: auto;
     display: block;
@@ -45,6 +49,10 @@ img {
     padding-right: 10px;
     padding-left: 10px;
     display: inline-block;
+}
+
+.footer {
+    padding: 10%;
 }
 
 .footer-links-desc {
@@ -88,6 +96,10 @@ img {
     text-align: center;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .indp-button {
     padding: 10px 16px;
     margin: 10px;
@@ -107,6 +119,14 @@ img {
  	background-color: #fff;
  	color: #000;
  	border: 1px solid;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
 }
 
 @media (max-width: 768px) {

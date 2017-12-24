@@ -66,6 +66,7 @@
 	text-align: center;
 	padding: 10%;
 	font-family: indp-normal;
+	text-shadow: 1px 1px #c3c3c3;
 }
 
 .section2 {
@@ -90,8 +91,20 @@
 }
 
 .feature-text {
-	font-size: 1.5em;
-	padding-top: 2%;
+    font-size: 1.5em;
+    padding-top: 2%;
+    width: 70%;
+}
+
+.tdRipple {
+	width: 40%; 
+	padding: 2%;
+}
+
+.tdText {
+	width: 50%; 
+	padding: 2%;
+	font-family: indp-normal;
 }
 
 .emailDiv {
@@ -144,6 +157,11 @@
 	.feature-text {
 		font-size: 1.2em;
 		padding-top: 5%;
+		width: 100%;
+	}
+
+	.tdRipple {
+		width: 20%;
 	}
 
 	.emailDiv {
