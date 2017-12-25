@@ -85,13 +85,13 @@ var options = {
   ca: fs.readFileSync('/etc/letsencrypt/live/www.indepublic.com/chain.pem')
 };
 
-https.createServer(options, app).listen(443, function(){
-   console.log("Node server up and running on port: 443");
+https.createServer(options, app).listen(8443, function(){
+   console.log("Node server up and running on port: 8443");
 });
 
 http.createServer(function (req, res) {
     res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
     res.end();
-}).listen(80, function(){
-    console.log("Node server up and running on port: 80");
+}).listen(8080, function(){
+    console.log("Node server up and running on port: 8080");
 });
