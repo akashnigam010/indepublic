@@ -76,6 +76,6 @@ app.post('/message', function (req, res) {
 	});
 })
 
-var server = app.listen(8443, function () {
+var server = app.listen(8080, function () {
   console.log("Node server up and running on port: " + server.address().port);
 })
