@@ -1,5 +1,6 @@
 const http = require('http');
 const https = require('https');
+var fs = require('fs');
 var express = require('express');
 var app = express();
 var path = require('path');
@@ -78,32 +79,19 @@ app.post('/message', function (req, res) {
 	});
 });
 
-const PROD = false;
-//const redirectHttps = require('redirect-https');
+var options = {
+  key: fs.readFileSync('/etc/letsencrypt/live/www.indepublic.com/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/www.indepublic.com/cert.pem'),
+  ca: fs.readFileSync('/etc/letsencrypt/live/www.indepublic.com/chain.pem')
+};
 
-const lex = require('greenlock-express').create({
-  server: PROD ? 'https://acme-v01.api.letsencrypt.org/directory' : 'staging',
- 
-  approveDomains: (opts, certs, cb) => {
-    if (certs) {
-      opts.domains = ['localhost']
-    } else { 
-      opts.email = 'akashnigam020@gmail.com'
-      opts.agreeTos = true;
-    }
-    cb(null, { options: opts, certs: certs });
-  }
-});
-const middlewareWrapper = lex.middleware;
-const redirectHttps = require('redirect-https');
-
-var httpServer = http.createServer(lex.middleware(redirectHttps()));
-var httpsServer = https.createServer(lex.httpsOptions, middlewareWrapper(app));
-
-httpServer.listen(80, function () {
-  console.log("Node server up and running on port: " + httpServer.address().port);
+https.createServer(options, app).listen(443, function(){
+   console.log("Node server up and running on port: 443");
 });
 
-httpsServer.listen(443, function () {
-  console.log("Node server up and running on port: " + httpsServer.address().port);
+http.createServer(function (req, res) {
+    res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+    res.end();
+}).listen(80, function(){
+    console.log("Node server up and running on port: 80");
 });
