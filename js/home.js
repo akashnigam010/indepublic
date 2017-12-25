@@ -24,7 +24,7 @@ $(document).ready(function() {
 		},
 		heading1 : {
 			english : 'All your information need',
-			hindi : 'जानकारी की आवश्यकताएं'
+			hindi : 'समस्त आवश्यक जानकारी'
 		},
 		feature1 : {
 			english : 'Discover and follow the vision, political career, work, '+

@@ -92,7 +92,6 @@ img {
 	border: 1px solid;
 	width: 100%;
 	padding: 10px 16px;
-    margin: 10px;
     text-align: center;
 }
 
@@ -103,7 +102,6 @@ img {
 .indp-button {
     padding: 10px 16px;
     margin: 10px;
-    line-height: 1.3333333;
     border-radius: 3px;
     -webkit-appearance: button;
     cursor: pointer;
@@ -137,4 +135,8 @@ img {
 	.footer-links-desc {
 	    font-size: 0.8em;
 	}
+
+    .indp-button {
+        margin: 20px 10px;
+    }
 }
