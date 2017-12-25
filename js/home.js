@@ -20,7 +20,7 @@ $(document).ready(function() {
 		},
 		section1 : {
 			english : 'Where people and the leaders come together',
-			hindi : 'जन एवं प्रतिनिधियों का कुटुंब'
+			hindi : 'जन एवं प्रतिनिधियों की एकजुटता'
 		},
 		heading1 : {
 			english : 'All your information need',
