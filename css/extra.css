@@ -1,0 +1,110 @@
+.main  {
+	background-repeat: no-repeat; 
+	background-image: url(../img/bg-main.jpg); 
+	background-size: cover; 
+	border-radius: 0px;
+}
+
+.logo-mini {
+	position: absolute;
+	width: 50px;
+	padding-top : 20px;
+	padding-left: 10px;
+}
+
+.main .header-main {
+	padding-top: 5%; 
+	padding-bottom: 5%;
+}
+
+.main .title {
+	color : #fff;
+	font-family : indp-light;
+	font-size : 3em;
+}
+
+.navbar-nav {
+    float: none;
+    text-align: center;
+    padding: 1%;
+    margin: 0px;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+    font-family: indp-light;
+    font-size: 1.2em;
+}
+
+.menu-language li > a {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.elem {
+	padding: 4% 10%;
+}
+
+.elem h3, h4 {
+	font-family: indp-light;
+}
+
+.dark {
+	background-color: #000; 
+	color: #fff;"
+}
+
+.feature-heading {
+	font-size: 2.5em;
+}
+
+.feature-text {
+	font-size: 1.5em;
+	padding-top: 2%;
+	width: 70%;
+}
+
+input, textarea {
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: none;
+    outline: none;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.callUsLabel {
+	font-size: 2em; 
+	padding-top: 5%;
+}
+
+@media (max-width: 680px) {
+	.main .title {
+		font-size : 2.5em;
+	}
+
+	.main .header-main {
+		padding-top: 10%; 
+		padding-bottom: 10%;
+	}
+
+	.feature-heading {
+		font-size: 2em;
+	}
+
+	.feature-text {
+		font-size: 1.2em;
+		padding-top: 5%;
+		width: 100%;
+	}
+	.callUsLabel {
+		font-size: 1.5em; 
+	}
+}

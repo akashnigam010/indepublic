@@ -1,0 +1,15 @@
+{
+  "name": "local-node",
+  "version": "1.0.1",
+  "description": "Local Web Server - Bananaa",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "nodemailer": "^4.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Akash Nigam",
+  "license": ""
+}

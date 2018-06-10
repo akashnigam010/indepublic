@@ -1,0 +1,173 @@
+.main  {
+	background-repeat: no-repeat; 
+	background-image: url(../img/bg-main.jpg); 
+	background-size: cover; 
+	border-radius: 0px;
+}
+
+.main .header-main {
+	padding-top: 5%; 
+	padding-bottom: 5%;
+}
+
+.main .title {
+	color : #fff;
+	font-family : indp-light;
+	font-size : 7em;
+}
+
+.main .subtitle {
+	color : #fff;
+	font-family : indp-light;
+}
+
+.tempFontSize { 
+	font-size: 4.9em !important;
+}
+
+.main .logo-main {
+	padding: 20% 10% 10% 10%; 
+	width: 50%;
+}
+
+.navbar-nav {
+    float: none;
+    text-align: center;
+    padding: 1%;
+    margin: 0px;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+    font-family: indp-light;
+    font-size: 1.2em;
+}
+
+.menu-language li > a {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.menu-language li > a:hover {
+    color: #000;
+}
+
+.menu-main .navbar-nav {
+    margin: 7.5px -15px;
+}
+
+.menu-main .navbar-nav > li > a {
+    color: #000;
+}
+
+.menu-main .navbar-nav > li > a {
+    border-bottom: 1px solid #000;
+}
+.section1 {
+	font-size: 3em;
+	text-align: center;
+	padding: 10%;
+	font-family: indp-normal;
+	text-shadow: 1px 1px #c3c3c3;
+}
+
+.section2 {
+	font-size: 1.8em;
+	text-align: center;
+	padding: 10%;
+	color: #fff;
+	background-color: #000;
+}
+
+.elem {
+	padding: 10%;
+}
+
+.dark {
+	background-color: #000; 
+	color: #fff;"
+}
+
+.feature-heading {
+	font-size: 2.5em;
+}
+
+.feature-text {
+    font-size: 1.5em;
+    padding-top: 2%;
+    width: 70%;
+}
+
+.tdRipple {
+	width: 40%; 
+	padding: 2%;
+}
+
+.tdText {
+	width: 50%; 
+	padding: 2%;
+	font-family: indp-normal;
+}
+
+.emailDiv {
+	width: 40%;
+}
+
+.subscriptionError {
+	font-family: indp-normal;
+}
+
+@media (max-width: 990px) {
+	.main .logo-main {
+		padding: 20% 10% 10% 10%; 
+		width: 30%;
+	}
+}
+
+@media (max-width: 680px) {
+	.main .logo-main {
+		padding: 20% 10% 10% 10%; 
+		width: 55%;
+	}
+
+	.main .title {
+		font-size : 4em;
+	}
+
+	.main .subtitle {
+		font-size : 90%;
+	}
+
+	.main .header-main {
+		padding-top: 10%; 
+		padding-bottom: 10%;
+	}
+
+	.section1 {
+		font-size: 3em;
+		padding: 20% 10%;
+	}
+
+	.section2 {
+		font-size: 1.3em;
+	}
+
+	.feature-heading {
+		font-size: 2em;
+	}
+
+	.feature-text {
+		font-size: 1.2em;
+		padding-top: 5%;
+		width: 100%;
+	}
+
+	.tdRipple {
+		width: 20%;
+	}
+
+	.emailDiv {
+		width: 100%;
+	}
+}
